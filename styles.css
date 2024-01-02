@@ -1,0 +1,21 @@
+.hidden {
+  display: none;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+}
+
+textarea {
+  height: 80vh;
+  width: 45vw;
+  margin: 10px;
+}
+
+p {
+  height: 80vh;
+  width: 40vw;
+}
+
+/*# sourceMappingURL=styles.css.map */
