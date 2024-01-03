@@ -3,9 +3,9 @@
 }
 
 h2 {
-
+    
 }
-div {
+.textareas {
     display: flex;
     flex-direction: row;
 }
@@ -13,9 +13,19 @@ textarea {
     height:80vh;
     width: 45vw;
     margin: 10px;
+    font-size: 20px;
 }
 
 p {
     height:80vh;
     width: 40vw;
+    font-size: 30px;
+}
+
+#dropdown-content {
+    display: none;
+}
+
+.dropdown:hover #dropdown-content {
+    display: block;
 }
