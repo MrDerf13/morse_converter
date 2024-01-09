@@ -1,31 +1,70 @@
-.hidden {
-    display: none;
+body {
+  font-family: "Libre Baskerville", serif;
+  box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+  padding: 20px;
 }
 
-h2 {
-    
+@media (max-width: 1024px) {
+  .textareas {
+    display: flex;
+    flex-direction: column;
+  }
+  textarea {
+    height: 30vh;
+    width: 90%;
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px dashed black;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-area {
+    width: 90%;
+  }
 }
-.textareas {
+
+@media (min-width: 1025px) {
+  .textareas {
     display: flex;
     flex-direction: row;
-}
-textarea {
-    height:80vh;
+  }
+  textarea {
+    height: 50vh;
     width: 45vw;
     margin: 10px;
     font-size: 20px;
+    padding: 10px;
+    border: 2px dashed black;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-area {
+    width: 50%;
+  }
 }
 
-p {
-    height:80vh;
-    width: 40vw;
-    font-size: 30px;
+#visible-dictionary {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.hidden {
+  display: none;
 }
 
-#dropdown-content {
-    display: none;
-}
-
-.dropdown:hover #dropdown-content {
-    display: block;
+.letter {
+  font-size: large;
+  margin: 5px;
+  padding-top: 5px;
+  border: 1px solid black;
+  height: 30px;
+  width: 120px;
+  text-align: center;
+  background: linear-gradient(0deg, rgb(202, 186, 167), rgb(132, 133, 127));
+  border-radius: 5px;
 }

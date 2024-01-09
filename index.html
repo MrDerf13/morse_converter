@@ -1,25 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Morse Converter</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script defer src="./converter.js" type="module"></script>
-    <script defer src="./morse_dictionary.js" type="module"></script>
-</head>
-<body>
-    <h2 id="morse">English to Morse Converter</h2>
-    <h2 id="english" class="hidden">Morse to English Converter</h2>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./dom-functions.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h2 class="eng">English Morse Converter</h2>
+      <h2 class="hidden mor">
+        -- --- .-. ... . / . -. --. .-.. .. ... .... / -.-. --- -. ...- . .-. -
+        . .-.
+      </h2>
+    </header>
+    <main>
+      <span>I want to translate from </span>
+      <select class="dropbtn">
+        <option value="English">English</option>
+        <option value="Morse">Morse</option>
+      </select>
+      <span class="eng"> to Morse.</span>
+      <span class="hidden mor"> to English.</span>
 
-    <select class="dropbtn">
-        <option>English</option>
-        <option>Morse</option>
-    </select>
-
-    <div class="textareas">
-        <textarea id="string-input" placeholder="Type here"></textarea>
-        <p id="output"></p>
-    </div>
-</body>
+      <section class="textareas">
+        <textarea
+          id="string-input"
+          placeholder="Type text to translate here"
+        ></textarea>
+        <textarea readonly id="output"></textarea>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-area">
+        <h3>Instructions</h3>
+        <li>
+          Type into the first area to get your translation displayed in the
+          second area.
+        </li>
+        <br />
+        <li>Type in English as you normally would.</li>
+        <br />
+        <li>
+          When typing in Morse: only use '.' and '-' and remeber to use spaces
+          between each character or ' /' for a space between words.
+        </li>
+        <br />
+        <li>
+          You may also click on the letters in the dictionary to insert certain
+          characters (if you don't feel like typing).
+        </li>
+      </section>
+      <section class="footer-area">
+        <h3>Dictionary</h3>
+        <div id="visible-dictionary"></div>
+      </section>
+    </footer>
+  </body>
 </html>
