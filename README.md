@@ -1,11 +1,9 @@
 # morse_converter
--An html that converts to and from morse code
 
-## 02/01/2024 Changes
-- Created all files
-- Basic flex structure created
-- english to morse function created
+- An html that converts to and from morse code
 
-## ## 03/01/2024 Changes
-- Changed converter to be one funtion based on a language input
-- added language input
+## Key Points
+
+- This project demonstrates an understanding of Jest testing and separation of DOM and JS functions to accomodate this.
+- The project itself traslates input strings to or from Morse code.
+- The dictionary has clickable buttons to add characters to the text area where necessary.
