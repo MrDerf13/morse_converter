@@ -1,6 +1,7 @@
 import { englishToMorse } from "./converter.js";
 import { morseCode } from "./morse_dictionary.js";
 
+// NOTE: Split this into a checkEng and checkMorse so that more of the code can be moved to the pure JS file and tested
 const checkLanguage = (language, string) => {
   if (language === "Morse" && string.length >= 3 && string.match(/\w/g)) {
     confirm(

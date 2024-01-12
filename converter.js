@@ -16,5 +16,6 @@ export const englishToMorse = (obj, language, string) => {
     .map((char) => obj[char])
     .join(language == "Morse" ? "" : " ");
 
+  // NOTE: include an error test for invalid characters, eg with accents, umlauts
   return converted;
 };

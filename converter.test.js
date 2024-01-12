@@ -55,6 +55,8 @@ describe("Test Morse to English", () => {
       )
     ).toBe("MANY  SPACES TEST ! ");
   });
+  // NOTE: Realistically the function should be changed to throw an error, relate to the check language functions maybe?
+  // NOTE: Or write really clear documentation on that the invalid characters are being passed over
   it("Should return a blank string if invalid characters are used", () => {
     expect(englishToMorse(morseCode, "Morse", "A")).toBe("");
   });
