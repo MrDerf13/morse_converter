@@ -1,0 +1,16 @@
+{
+  "name": "morse_converter",
+  "version": "1.0.0",
+  "description": "-An html that converts to and from morse code",
+  "main": "converter.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.23.3",
+    "jest": "^29.7.0"
+  }
+}
